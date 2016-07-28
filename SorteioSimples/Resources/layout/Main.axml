@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rowCount="4"
+        android:columnCount="2"
+        android:orientation="vertical">
+        <TextView
+            android:text="Insira o maior numero do sorteio"
+            android:textSize="14dip"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnSpan="1" />
+        <EditText
+            android:id="@+id/MaiorNumero"
+            android:text="100"
+            android:textSize="72dip"
+            android:layout_row="1"
+            android:layout_column="1" 
+            android:inputType="number"/>
+        <Button
+            android:id="@+id/Sortear"
+            android:text="Sortear"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_columnSpan="1" />
+        <TextView
+            android:text="0 ate "
+            android:textSize="72dip"
+            android:layout_row="1"
+            android:layout_column="0" />
+        <TextView
+            android:text="O ganhador é o numero: "
+            android:textSize="16dip"
+            android:layout_row="3"
+            android:layout_column="0" />
+        <TextView
+            android:id="@+id/ResultadoSorteio"
+            android:text=""
+            android:textSize="72dip"
+            android:layout_row="3"
+            android:layout_column="1" />
+    </GridLayout>
+</LinearLayout>
