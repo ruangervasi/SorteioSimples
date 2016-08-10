@@ -27,8 +27,6 @@ namespace SorteioSimples
             EditText Numero = FindViewById<EditText>(Resource.Id.MaiorNumero);
             TextView resultado = FindViewById<TextView>(Resource.Id.ResultadoSorteio);
 
-            
-
             btnSortear.Click += delegate { resultado.Text = Sortear(Numero.Text); };
         }
 
@@ -42,7 +40,8 @@ namespace SorteioSimples
             string strNumeroaleatorio;
 
             strNumeroaleatorio = rdn.Next(0,Convert.ToInt32(numero) + 1).ToString();
-                Messeger.Text = "O ganhador é o numero: ";
+            Messeger.Text = "O ganhador é o numero: ";
+                
                 return strNumeroaleatorio;
             }
             else
